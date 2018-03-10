@@ -10,6 +10,10 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlatoComponent } from './plato/plato.component';
 import { ComboBoxDirective } from './_directive/combobox.directive';
+import { PlatoDetalleComponent } from './plato/plato-detalle/plato-detalle.component';
+import { PlatoEdicionComponent } from './plato/plato-edicion/plato-edicion.component';
+import { PlatoInicioComponent } from './plato/plato-inicio/plato-inicio.component';
+import { PlatoListaComponent } from './plato/plato-lista/plato-lista.component';
 
 
 
@@ -22,7 +26,11 @@ import { ComboBoxDirective } from './_directive/combobox.directive';
     HeaderComponent,
     FooterComponent,
     PlatoComponent,
-    ComboBoxDirective
+    ComboBoxDirective,
+    PlatoDetalleComponent,
+    PlatoEdicionComponent,
+    PlatoInicioComponent,
+    PlatoListaComponent
     
   ],
   imports: [
