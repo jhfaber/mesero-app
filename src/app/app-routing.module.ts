@@ -17,7 +17,9 @@ const appRoutes: Routes = [
 
     ] },
     { path: 'consumo', component: ConsumoComponent },
-    { path: 'consulta', component: ConsultaComponent }
+    { path: 'consulta', component: ConsultaComponent },
+    // By default
+    { path: '', redirectTo: 'plato', pathMatch:'full'}
 ]
 
 @NgModule({
