@@ -1,3 +1,5 @@
+
+
 import { PlatoService } from './_service/plato.service';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,7 +19,7 @@ import { PlatoInicioComponent } from './plato/plato-inicio/plato-inicio.componen
 import { PlatoListaComponent } from './plato/plato-lista/plato-lista.component';
 
 
-
+import {DataTableModule} from "angular2-datatable";
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { PlatoListaComponent } from './plato/plato-lista/plato-lista.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DataTableModule
   ],
   //The resources of the app 
   providers: [
