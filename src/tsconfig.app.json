@@ -1,13 +1,21 @@
 {
-  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../out-tsc/app",
-    "baseUrl": "./",
-    "module": "es2015",
-    "types": []
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": false,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "outDir": "public/"
   },
+  "include": [
+    "app/**.ts"
+  ],
   "exclude": [
-    "test.ts",
-    "**/*.spec.ts"
+    "node_modules",
+    "**/*.spec.ts",
+    "public"
   ]
 }
