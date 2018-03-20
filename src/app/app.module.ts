@@ -1,3 +1,4 @@
+import { PlatoService } from './_service/plato.service';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -30,14 +31,15 @@ import { PlatoListaComponent } from './plato/plato-lista/plato-lista.component';
     PlatoDetalleComponent,
     PlatoEdicionComponent,
     PlatoInicioComponent,
-    PlatoListaComponent
+    PlatoListaComponent,
+    
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [PlatoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
